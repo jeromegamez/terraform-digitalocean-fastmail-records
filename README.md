@@ -1,6 +1,6 @@
 # terraform + DigitalOcean + Fastmail
 
-A terraform module that provisions DigitalOcean with
+A terraform module to provision DigitalOcean with
 DNS records for FastMail.
 
 https://www.fastmail.com/help/receive/domains-advanced.html
