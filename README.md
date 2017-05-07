@@ -29,7 +29,7 @@ _*Referral Link_
 
 ```tf
 module "fastmail" {
-  source = "github.com/jeromegamez/terraform_digitalocean_fastmail"
+  source = "github.com/jeromegamez/tf_do_fm"
 
   domain = "example.com"
 }
