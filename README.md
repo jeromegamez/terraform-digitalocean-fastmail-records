@@ -28,8 +28,8 @@ _*Referral Link_
 ## Example
 
 ```tf
-module "fastmail" {
-  source = "github.com/jeromegamez/tf_do_fm"
+module "fastmail-records" {
+  source = "jeromegamez/fastmail-records/digitalocean"
 
   domain = "example.com"
 }
