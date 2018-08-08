@@ -18,12 +18,12 @@ _*Referral Link_
 ## Module input variables
 
 - `domain` The domain to configure
-- `disable_email_autodiscovery` (Default: _false_)
-   Omit creation of DNS entries for client email auto-discovery
-- `disable_carddav_autodiscovery` (Default: _false_)
-   Omit creation of DNS entries for client CardDAV auto-discovery
-- `disable_caldav_autodiscovery` (Default: _false_)
-   Omit creation of DNS entries for client CalDAV auto-discovery
+- `enable_email_autodiscovery` (Default: _false_)
+   Create DNS entries for client email auto-discovery
+- `enable_carddav_autodiscovery` (Default: _false_)
+   Create DNS entries for client CardDAV auto-discovery
+- `enable_caldav_autodiscovery` (Default: _false_)
+   Create DNS entries for client CalDAV auto-discovery
 
 ## Example
 
@@ -34,6 +34,13 @@ module "fastmail-records" {
   domain = "example.com"
 }
 ```
+
+## Known issues
+
+The Terraform DigitalOcean provider is currently not able to set `0` values for domain records.
+This has been implemented in the underlying api client
+(see [digitalocean/godo#164](https://github.com/digitalocean/godo/pull/164)), but this has not
+been released yet.
 
 ## License
 
