@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## 2.0 - 2018-08-08
 
 - Changed parameter names and default values:
   - `disable_email_autodiscovery = false` -> `enable_email_autodiscovery = false`
